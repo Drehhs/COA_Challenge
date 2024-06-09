@@ -1,0 +1,161 @@
+/* Basic body styling */
+body {
+    background-color: #1d1d1d;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style for headings */
+h2 {
+    margin-left: 20px;
+}
+
+/* General gallery styling */
+.gallery {
+    margin: 20px;
+}
+
+/* Desktop gallery item styling */
+.gallery-desktop .gallery-item {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for desktop gallery items */
+.gallery-desktop .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling for desktop gallery */
+.gallery-desktop .gallery-item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Caption styling for desktop gallery */
+.gallery-desktop .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Initially hide mobile gallery */
+.gallery-mobile {
+    display: none;
+}
+
+/* Mobile gallery item styling */
+.gallery-mobile .gallery-item {
+    display: block;
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for mobile gallery items */
+.gallery-mobile .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling for mobile gallery */
+.gallery-mobile .gallery-item img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Caption styling for mobile gallery */
+.gallery-mobile .caption {
+    position: relative;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* Media query to switch between desktop and mobile galleries */
+@media (max-width: 768px) {
+    .gallery-desktop {
+        display: none; /* Hide desktop gallery on small screens */
+    }
+    .gallery-mobile {
+        display: block; /* Show mobile gallery on small screens */
+    }
+}
+
+/* Modal  including navigation buttons */
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    margin-top: -22px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

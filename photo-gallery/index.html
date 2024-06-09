@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Desktop Gallery Section -->
+    <div class="gallery gallery-desktop" id="gallery01">
+        <h2>Gallery 01</h2>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/fennec-fox.jpg" alt="Fennec Fox">
+            <div class="caption">Fennec Fox</div>
+        </div>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/humpback-whale.jpg" alt="Humpback Whale">
+            <div class="caption">Humpback Whale</div>
+        </div>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/common-brown-baboon.jpg" alt="Common Brown Baboon">
+            <div class="caption">Common Brown Baboon</div>
+        </div>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/spotted-deer.jpg" alt="Spotted Deer">
+            <div class="caption">Spotted Deer</div>
+        </div>
+    </div>
+
+    <!-- Mobile Gallery Section -->
+    <div class="gallery gallery-mobile" id="gallery03">
+        <h2>Gallery 03</h2>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/fennec-fox.jpg" alt="Fennec Fox">
+            <div class="caption">Fennec Fox</div>
+        </div>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/humpback-whale.jpg" alt="Humpback Whale">
+            <div class="caption">Humpback Whale</div>
+        </div>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/common-brown-baboon.jpg" alt="Common Brown Baboon">
+            <div class="caption">Common Brown Baboon</div>
+        </div>
+        <!-- Gallery Item -->
+        <div class="gallery-item">
+            <img src="images/spotted-deer.jpg" alt="Spotted Deer">
+            <div class="caption">Spotted Deer</div>
+        </div>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <span class="prev">&lt;</span>
+            <img id="modalImage" src="" alt="">
+            <span class="next">&gt;</span>
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
